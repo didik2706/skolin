@@ -8,21 +8,12 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-
-	{{-- jquery --}}
-	<script src="{{ url('assets/js/vendor/jquery.min.js') }}"></script>
-
 	<!--====== Favicon Icon ======-->
 	<link rel="shortcut icon" href="{{ url('assets\images\fav.png') }}" type="image/png') }}">
 	<link rel="stylesheet" href="{{ url('assets/css/vendor/owl.carousel.min.css') }}" />
 	<link rel="stylesheet" href="{{ url('assets/css/vendor/owl.theme.default.min.css') }}" />
 	<link rel="stylesheet" href="{{ url('assets\css\vendor\plugins.min.css') }}">
 	<link rel="stylesheet" href="{{ url('assets\css\style.min.css') }}">
-
-	<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
-
-	{{-- Summernote --}}
-    {{-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet"> --}}
 </head>
 
 <body style="background-color: #fff;">
@@ -169,22 +160,22 @@
 
 	<link rel="stylesheet" href="{{ url('css/style.min.css') }}">
 
+	<script src="{{ url('assets/js/vendor/jquery-3.5.1.min.js') }}"></script>
+	<script src="{{ url('assets/js/vendor/bootstrap.min.js') }}"></script>
 	<script src="{{ url('assets/js/vendor/jquery.dad.js') }}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
-	<script src="{{ url('admin/assets/plugins/summernote/summernote.min.js') }}"></script>
 
 	<script>
+		$('.prev').click(function() {
+			$('.carousel').carousel('prev');
+		});
+		$('.next').click(function() {
+			$('.carousel').carousel('next');
+		});
 		$(document).ready(function () {
-			
-			// $('#summernote').summernote({
-			// 	height: 300
-			  // });
-			  CKEDITOR.replace( 'summernote' );
-			
 			$("#drag").dad();
 			$("#dragPhoto").dad();
 			$("#dragPhoto2").dad();
-
 		})
 	</script>
 	@include('adminsekolah.pages.brosur.script')

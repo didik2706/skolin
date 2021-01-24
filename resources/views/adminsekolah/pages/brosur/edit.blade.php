@@ -29,6 +29,7 @@
 
 
 		<!-- tutup keunggulan popup -->
+		{{--  <img src="{{ url('assets/img/sekolah/Picture47.jpg') }}" alt="">  --}}
 		<div class="container">
 			<div class="row">
 				<div id="form_hide2" class="carousel slide carousel-width" data-ride="carousel">
@@ -37,7 +38,7 @@
 							<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
 								<div class="big-image">
 									<a href="{{ $sliderfoto->link_gambar }}" target="_blank">
-										<img src="{{ asset('storage/sekolah/slider/'.$sliderfoto->foto) }}">
+										<img src="{{ url('assets/img/sekolah/Picture47.jpg') }}">
 									</a>
 								</div>
 							</div>
@@ -50,11 +51,11 @@
 							</div>
 						@endforeach --}}
 					</div>
-					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<a class="carousel-control-prev prev" href="#carouselExampleControls" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<a class="carousel-control-next next" href="#carouselExampleControls" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
