@@ -565,9 +565,10 @@
                     </div>
 
                     <div class="form-group mb-4">
-                        <label for="Nama Sekolah"><strong>Isi Profile, Sejarah
-                                dll</strong></label>
-                        <textarea class="form-control" id="syarat" placeholder="Ini teks edit" rows="8" name="profile"></textarea>
+                        <label for="Nama Sekolah">
+                            <strong>Isi Profile, Sejarah, dll</strong>
+                        </label>
+                        <textarea id="summernote" name="profile"></textarea>
                     </div>
                     <button type="submit" class="btn btn-success fr">Save changes</button>
                 </form>
